@@ -10,7 +10,7 @@ BUILDPACK_NAME=webp-binaries
 
 function indent() {
   c='s/^/       /'
-  case $(uname) in
+  case $(haikalv2-master) in
     Darwin) sed -l "$c";;
     *)      sed -u "$c";;
   esac
